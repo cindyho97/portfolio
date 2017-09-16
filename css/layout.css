@@ -242,7 +242,7 @@
 
 /* 2. Section */
 .section {
-	padding: 105px 0;
+	padding: 95px 0;
 	position: relative;
 }
 
@@ -261,7 +261,7 @@
 }
 
 .section.gray {
-	padding: 105px 0;
+	padding: 115px 0;
 	background: #f9f9f9;
 }
 
@@ -359,7 +359,7 @@
 
 /* 4. About */
 .section.about .row {
-	padding: 25px 0 55px 0;
+	padding: 15px 0 45px 0;
 }
 
 @media (max-width: 1079px) {
@@ -375,7 +375,7 @@
 
 /* 5. Services */
 .section.services {
-	padding: 105px 0 70px 0;
+	padding: 125px 0 90px 0;
 }
 
 @media (max-width: 1079px) {
@@ -431,7 +431,7 @@
 
 /* 6. Portfolio */
 .section.works {
-	padding: 105px 0 70px 0;
+	padding: 105px 0 10px 0;
 }
 
 @media (max-width: 1079px) {
@@ -621,7 +621,7 @@
 
 /* 8. Footer */
 footer {
-	padding: 20px 0;
+	padding: 40px 0;
 }
 
 @media (max-width: 720px) {
