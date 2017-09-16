@@ -781,6 +781,10 @@ td {
 	font-style: italic !important;
 }
 
+.underline {
+    text-decoration-line: underline;
+}
+
 /* 14. Blockquote */
 blockquote {
 	font-family: 'Hind', helvetica;
