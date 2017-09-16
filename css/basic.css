@@ -457,23 +457,35 @@ a.btn:hover,
 	-webkit-box-shadow: inset 0 -14px 0 #ede574;
 	-khtml-box-shadow: inset 0 -14px 0 #ede574;
 }
+
 a.btn-github, 
 .btn-github {
     width: 35px;
     height: 35px;
     padding: 0;
-    /*
-    box-shadow: inset 0 0px 0 #ede574 !important;
-	-moz-box-shadow: inset 0 0px 0 #ede574 !important;
-	-webkit-box-shadow: inset 0 0px 0 #ede574 !important;
-	-khtml-box-shadow: inset 0 0px 0 #ede574 !important;*/
 }
+
+a.btn-youtube,
+.btn-youtube {
+    width: 35px;
+    height: 27px;
+    padding: 0;
+}
+
 a.btn-github:hover, 
 .btn-github:hover {
     box-shadow: inset 0 -35px 0 #ede574 !important;
 	-moz-box-shadow: inset 0 -35px 0 #ede574 !important;
 	-webkit-box-shadow: inset 0 -35px 0 #ede574 !important;
 	-khtml-box-shadow: inset 0 -35px 0 #ede574 !important;
+}
+
+a.btn-youtube:hover,
+.btn-youtube:hover {
+    box-shadow: inset 0 -27px 0 #ede574 !important;
+	-moz-box-shadow: inset 0 -27px 0 #ede574 !important;
+	-webkit-box-shadow: inset 0 -27px 0 #ede574 !important;
+	-khtml-box-shadow: inset 0 -27px 0 #ede574 !important;
 }
 
 
