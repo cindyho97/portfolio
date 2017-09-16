@@ -242,39 +242,39 @@
 
 /* 2. Section */
 .section {
-	padding: 180px 0;
+	padding: 105px 0;
 	position: relative;
 }
 
 @media (max-width: 1079px) {
 	.section {
-		padding: 120px 0;
+		padding: 35px 0;
 	}
 
 }
 
 @media (max-width: 720px) {
 	.section {
-		padding: 90px 0;
+		padding: 25px 0;
 	}
 
 }
 
 .section.gray {
-	padding: 180px 0;
+	padding: 105px 0;
 	background: #f9f9f9;
 }
 
 @media (max-width: 1079px) {
 	.section.gray {
-		padding: 120px 0;
+		padding: 35px 0;
 	}
 
 }
 
 @media (max-width: 720px) {
 	.section.gray {
-		padding: 90px 0;
+		padding: 25px 0;
 	}
 
 }
@@ -375,19 +375,19 @@
 
 /* 5. Services */
 .section.services {
-	padding: 180px 0 150px 0;
+	padding: 105px 0 70px 0;
 }
 
 @media (max-width: 1079px) {
 	.section.services {
-		padding: 120px 0 90px 0;
+		padding: 35px 0 25px 0;
 	}
 
 }
 
 @media (max-width: 720px) {
 	.section.services {
-		padding: 90px 0 60px 0;
+		padding: 25px 0 15px 0;
 	}
 
 }
@@ -431,19 +431,19 @@
 
 /* 6. Portfolio */
 .section.works {
-	padding: 180px 0 110px 0;
+	padding: 105px 0 70px 0;
 }
 
 @media (max-width: 1079px) {
 	.section.works {
-		padding: 120px 0 90px 0;
+		padding: 35px 0 25px 0;
 	}
 
 }
 
 @media (max-width: 720px) {
 	.section.works {
-		padding: 90px 0 60px 0;
+		padding: 25px 0 15px 0;
 	}
 
 }
@@ -621,12 +621,12 @@
 
 /* 8. Footer */
 footer {
-	padding: 120px 0;
+	padding: 20px 0;
 }
 
 @media (max-width: 720px) {
 	footer {
-		padding: 90px 0;
+		padding: 10px 0;
 	}
 
 }
