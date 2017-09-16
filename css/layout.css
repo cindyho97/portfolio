@@ -692,6 +692,10 @@ footer .st-soc a:hover .icon {
 	-webkit-box-shadow: 0 25px 50px rgba(0, 0, 0, 0.045);
 	-khtml-box-shadow: 0 25px 50px rgba(0, 0, 0, 0.045);
 }
+.popup-box p {
+    font-size: 16px;
+    line-height: 20px;
+}
 
 @media (max-width: 580px) {
 	.popup-box {
