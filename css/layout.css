@@ -606,12 +606,12 @@
 }
 
 .box-items .box-item .name {
-	font-size: 28px;
+	font-size: 20px;
 }
 
 @media (max-width: 1079px) {
 	.box-items .box-item .name {
-		font-size: 22px;
+		font-size: 16px;
 		line-height: 30px;
 	}
 
