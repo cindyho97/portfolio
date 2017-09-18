@@ -23,11 +23,11 @@
 
 
 
-! function($) {
+!function ($) {
 
     "use strict";
 
-    var Typed = function(el, options) {
+    var Typed = function (el, options) {
 
         // chosen element to manipulate text
         this.el = $(el);
@@ -43,7 +43,7 @@
         this.showCursor = this.isInput ? false : this.options.showCursor;
 
         // text content of element
-        this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text()
+        this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text();
 
         // html or plain text
         this.contentType = this.options.contentType;
@@ -99,14 +99,12 @@
 
     Typed.prototype = {
 
-        constructor: Typed
-
-        ,
-        init: function() {
+        constructor: Typed,
+        init: function () {
             // begin the loop w/ first current string (global self.strings)
             // current string will be passed as an argument each time after this
             var self = this;
-            self.timeout = setTimeout(function() {
+            self.timeout = setTimeout(function () {
                 for (var i=0;i<self.strings.length;++i) self.sequence[i]=i;
 
                 // shuffle the array if true

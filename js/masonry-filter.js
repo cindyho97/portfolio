@@ -1,30 +1,30 @@
-(function($){
+(function ($) {
   'use strict';
   
-  $.fn.multipleFilterMasonry = function(options){
-    var cache=[];
+  $.fn.multipleFilterMasonry = function (options) {
+    var cache = [];
     var filters = [];
 
-    if(options.selectorType === 'list') {
-      $(options.filtersGroupSelector).children().each(function() {
+    if (options.selectorType === 'list') {
+      $(options.filtersGroupSelector).children().each(function () {
         filters.push($(this).data('filter'));
       });
     }
 
     //the main job of the function is to cache the item,because we are going to filter the items later
-    var init = function($container){
-      $container.find(options.itemSelector).each(function(){
+    var init = function ($container) {
+      $container.find(options.itemSelector).each(function () {
         cache.push($(this));
       });
       $container.masonry(options);
     };
 
     //filter items in cache
-    var filterItems = function(selector){
-      var result=[];
-      $(cache).each(function(item){
-        $(selector).each(function(index,sel) {
-          if(cache[item].is(sel)){
+    var filterItems = function (selector) {
+      var result = [];
+      $(cache).each(function (item) {
+        $(selector).each(function (index,sel) {
+          if (cache[item].is(sel)) {
             if($.inArray(cache[item], result) === -1) result.push(cache[item]);
           }
         });
@@ -33,9 +33,9 @@
     };
 
     //reload masonry
-    var reload = function($container,items){
+    var reload = function ($container, items) {
       $container.empty();
-      $(items).each(function(){
+      $(items).each(function () {
         $($container).append($(this));
       });
       $container.masonry('reloadItems');
@@ -43,18 +43,18 @@
     };
 
     // Hash filter
-    var hashFilter = function($container) {
+    var hashFilter = function ($container) {
       var hash = window.location.hash.replace("#", "");
-      if($.inArray(hash, filters) !== -1) {
+      if ($.inArray(hash, filters) !== -1) {
         reload($container, $('.' + hash));
       }
     }
 
-    var proc = function($container){
-      $(options.filtersGroupSelector).find('input[type=radio]').each(function(){
+    var proc = function ($container){
+      $(options.filtersGroupSelector).find('input[type=radio]').each(function (){
         $(this).change(function(){
           var selector = [];
-          $(options.filtersGroupSelector).find('input[type=radio]').each( function() {
+          $(options.filtersGroupSelector).find('input[type=radio]').each( function () {
             if ( $(this).is(':checked') ) {
               selector.push( '.' + $(this).val() );
             }
