@@ -459,11 +459,11 @@
 						<div class="title">Contact Me</div>
 					</div>
 					<div class="contact-form">
-						<form id="cform" method="post">
+						<form id="cform" method="POST">
 							<div class="row">
 								<div class="col col-m-12 col-t-6 col-d-6 animated">
 									<div class="value">
-										<input type="text" name="name" placeholder="Name *" />
+										<input type="text" name="name" placeholder="Name *" id="name" required="true"/>
 									</div>
 								</div>
 								<div class="col col-m-12 col-t-6 col-d-6 animated">
@@ -473,30 +473,38 @@
 								</div>
 								<div class="col col-m-12 col-t-6 col-d-6 animated">
 									<div class="value">
-										<input type="text" name="email" placeholder="Email *" />
+										<input type="email" name="_replyto" placeholder="Email *" id="email" required="true"/>
 									</div>
 								</div>
 								<div class="col col-m-12 col-t-6 col-d-6 animated">
 									<div class="value">
-										<input type="text" name="subject" placeholder="Subject *" />
+										<input type="text" name="_subject" placeholder="Subject *" id="subject" required="true"/>
 									</div>
 								</div>
 								<div class="col col-m-12 col-t-12 col-d-12 animated">
 									<div class="value">
-										<textarea name="message" placeholder="Message"></textarea>
+										<textarea name="message" placeholder="Message" id="message" required="true"></textarea>
 									</div>
 								</div>
+                                <input type="text" name="_gotcha" style="display:none" />
 								<div class="col col-m-12 col-t-12 col-d-12 animated">
-									<a href="#" class="btn" onclick="$('#cform').submit(); return false;">Send Message</a>
+									<input type="submit" value="Send" id="submit-button">
 								</div>
 							</div>
 						</form>
-						<div class="alert-success">
+						<div id="popup-succes" class="alert-success">
 							<p>Thanks, your message is sent successfully. I will contact you as soon as possible!</p>
+						</div>
+                        <div id="popup-fail" class="alert-success">
+							<p>Please fill all the neccesary fields.</p>
 						</div>
 					</div>
 				</div>
 			</div>
+             <script>
+                
+            </script> 
+            
 
 			<!-- Footer -->
 			<footer class="align-center">
@@ -528,7 +536,8 @@
 	<script src="js/jquery.mb.YTPlayer.js"></script>
 	<script src="js/particles.js"></script>
 	<script src="js/typed.js"></script>
-	
+    <script src="js/contact-form.js"></script>
+    
 	<!-- Main Scripts -->
 	<script src="js/main.js"></script>
 	
