@@ -4,12 +4,12 @@ var contactform =  document.getElementById('cform');
 var showPopup = function (event) {
     event.preventDefault();
     if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('subject').value == "" || document.getElementById('message').value == ""){
-        document.getElementById('popup-succes').style.display = 'block';
-        document.getElementById('popup-succes').innerHTML="Please fill all the neccesary fields.";
+        document.getElementById('popup').style.display = 'block';
+        document.getElementById('popup').innerHTML="Please fill all the neccesary fields.";
     }
     else {
-        document.getElementById('popup-succes').style.display = 'block';
-        document.getElementById('popup-succes').innerHTML="Thanks, your message is sent successfully. I will contact you as soon as possible!";
+        document.getElementById('popup').style.display = 'block';
+        document.getElementById('popup').innerHTML="Thanks, your message is sent successfully. I will contact you as soon as possible!";
         document.getElementById('cform').submit();
     }
 };
