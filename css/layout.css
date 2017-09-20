@@ -618,6 +618,11 @@
 }
 
 /* 7. Contacts */
+
+#message, #name, #email, #phone, #subject {
+    font-family: 'Hind', helvetica;
+    font-weight: 400;
+}
 .alert-success {
 	display: none;
 }
@@ -626,6 +631,10 @@
 	margin: 60px 0 30px 0;
 	font-size: 26px;
 	color: #292929;
+}
+
+#submit-button {
+    margin-bottom: 25px;
 }
 
 /* 8. Footer */
