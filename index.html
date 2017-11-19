@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="css/ionicons.css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" />
 	<link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
 	
 	<!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -211,9 +212,9 @@
 							</div>
 							<div id="popup-1" class="popup-box mfp-fade mfp-hide">
 								<div class="content">
-									<div class="image">
-										<img src="images/works/tower-defense.jpg" alt="screenshot of gameplay tower defense vr">
-									</div>
+									<div class="video-container image">
+                                        <iframe src="https://www.youtube.com/embed/M54neLiSFv0" frameborder="0"></iframe>
+                                    </div>
 									<div class="desc">
 										<div class="category">Unity</div>
 										<h4>Tower Defense VR</h4>
@@ -267,9 +268,9 @@
 							</div>
 							<div id="popup-3" class="popup-box mfp-fade mfp-hide">
 								<div class="content">
-									<div class="image">
-										<img src="images/works/pacman.jpg" alt="">
-									</div>
+									<div class="video-container image">
+                                        <iframe src="https://www.youtube.com/embed/7hmreDTJaFU" frameborder="0"></iframe>
+                                    </div>
 									<div class="desc">
 										<div class="category">Programming</div>
 										<h4>Pacman</h4>
@@ -296,9 +297,9 @@
 							</div>
 							<div id="popup-4" class="popup-box mfp-fade mfp-hide">
 								<div class="content">
-									<div class="image">
-										<img src="images/works/komaf.jpg" alt="shop menu of the game, where you can buy disguise for the alien">
-									</div>
+									<div class="video-container image">
+                                        <iframe src="https://www.youtube.com/embed/O0CmCkRjF2U" frameborder="0"></iframe>
+                                    </div>
 									<div class="desc">
 										<div class="category">Unity</div>
 										<h4>KomAf</h4>
@@ -378,9 +379,10 @@
 							</div>
 							<div id="popup-7" class="popup-box mfp-fade mfp-hide">
 								<div class="content">
-									<div class="image">
-										<img src="images/works/title-sequence.jpg" alt="yellow camera icon with flat design">
-									</div>
+                                    <div class="video-container image">
+                                        <iframe src="https://www.youtube.com/embed/Zb3MMun9wLw" frameborder="0"></iframe>
+                                    </div>
+                                    
 									<div class="desc">
 										<div class="category">Video Production</div>
 										<h4>Bleeding Sun Title Sequence</h4>
@@ -406,9 +408,15 @@
 							</div>
 							<div id="popup-8" class="popup-box mfp-fade mfp-hide">
 								<div class="content">
-									<div class="image">
-										<img src="images/works/mockup.jpg" alt="front page of the mockup">
-									</div>
+                                    <!-- Start Carousel -->
+                                    <div class="rslides_container image">
+                                      <ul class="rslides" id="slider1">
+                                        <li><img src="images/works/komaf.jpg" alt=""></li>
+                                        <li><img src="images/works/lighting-candles.jpg" alt=""></li>
+                                        <li><img src="images/works/outrun.jpg" alt=""></li>
+                                      </ul>
+                                    </div>
+                                    <!-- End Carousel -->
 									<div class="desc">
 										<div class="category">UI/UX Design</div>
 										<h4>Mockup Zaha Hadid Microsite</h4>
@@ -434,9 +442,9 @@
 							</div>
 							<div id="popup-9" class="popup-box mfp-fade mfp-hide">
 								<div class="content">
-									<div class="image">
-										<img src="images/works/outrun.jpg" alt="game over screen from the outrun game">
-									</div>
+									<div class="video-container image">
+                                        <iframe src="https://www.youtube.com/embed/injS4j12-mo?start=4" frameborder="0"></iframe>
+                                    </div>
 									<div class="desc">
 										<div class="category">Programming</div>
 										<h4>Outrun</h4>
@@ -453,9 +461,11 @@
 				</div>
 			</div>
 			
+
 			<!-- Section Contacts -->
 			<div class="section contacts align-left gray" id="contact-section">
 				<div class="fw">
+                
 					<div class="titles animated">
 						<div class="title">Contact Me</div>
 					</div>
@@ -499,9 +509,6 @@
 					</div>
 				</div>
 			</div>
-             <script>
-                
-            </script> 
             
 
 			<!-- Footer -->
@@ -522,6 +529,7 @@
 		</div>
 
 	</div>
+  
 	
 	<!-- jQuery Scripts -->
 	<script src="js/jquery.min.js"></script>
@@ -538,6 +546,20 @@
     
 	<!-- Main Scripts -->
 	<script src="js/main.js"></script>
-	
+    
+    <!-- Image Carousel -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+          $("#slider1").responsiveSlides({
+            auto: false,
+            pager: true,
+            nav: true,
+            speed: 500,
+            maxwidth: 800,
+            namespace: "centered-btns"
+          });
+        });
+    </script>
 </body>
 </html>
