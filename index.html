@@ -276,7 +276,7 @@
                                         <iframe src="https://www.youtube.com/embed/qykoBwzMkyo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                     </div>
 									<div class="desc">
-										<div class="category">Unity & Arduino</div>
+										<div class="category">Unity, Arduino</div>
 										<h4>Whac-A-Mole Ukulele</h4>
 										<p>
 											Project where I'll be using the Arduino UNO and connect it to a whac-a-mole game in Unity3D.
@@ -289,13 +289,13 @@
 							</div>
 						</div> 
 						
-						<div class="col col-m-12 col-t-5 col-d-4 box-item f-unity">
+						<div class="col col-m-12 col-t-5 col-d-4 box-item f-unity f-design">
 							<div class="item animated">
 								<div class="desc">
 									<div class="image">
 										<a href="#popup-4" class="has-popup"><img src="images/works/komaf.jpg" alt="shop menu of the game, where you can buy disguise for the alien" /></a>
 									</div>
-									<div class="category">Unity</div>
+									<div class="category">Unity, UX/UI design</div>
 									<div class="name">
 										<a href="#popup-4" class="has-popup">KomAf</a>
 									</div>
@@ -307,7 +307,7 @@
                                         <iframe src="https://www.youtube.com/embed/O0CmCkRjF2U" frameborder="0"></iframe>
                                     </div>
 									<div class="desc">
-										<div class="category">Unity</div>
+										<div class="category">Unity, UX/UI design</div>
 										<h4>KomAf</h4>
 										<p>
 											Mobile game about an alien who has to go through various places in Antwerp to get back to his spaceship.
@@ -492,7 +492,7 @@
 								</div>
 							</div>
 						</div>
-                        <div class="col col-m-12 col-t-4 col-d-4 box-item f-design f-video">
+                        <div class="col col-m-12 col-t-4 col-d-4 box-item f-video">
 							<div class="item animated">
 								<div class="desc">
 									<div class="image">
@@ -654,6 +654,8 @@
     <!-- Image Carousel -->
     <script src="js/responsiveslides.min.js"></script>
     <script>
+        /*PROBLEM ONLY CALLED ONCE - image slider won't work after you sort with filter*/
+        /* solution? --> call functions each time a filter tab is clicked*/
         $(function () {
           $("#slider1").responsiveSlides({
             auto: false,
