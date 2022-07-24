@@ -422,11 +422,12 @@
 
 .section.services .service-item p {
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
 }
 
 /*Experience Section*/
+
 .experience-block h6 {
   margin-bottom: 0;
   font-size: 16px;
@@ -437,9 +438,13 @@ p.experience-year {
   font-size: 16px;
 }
 
+.experience-block ul {
+  margin-bottom: 50px;
+}
+
 .experience-block li {
   margin: 0 25px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   color: #292929;
   list-style-type: circle;

@@ -1,5 +1,5 @@
 function initializeSlides() {
-  $("#slider1").responsiveSlides({
+  $("#slider-showroom").responsiveSlides({
     auto: false,
     pager: true,
     nav: true,
@@ -8,7 +8,16 @@ function initializeSlides() {
     namespace: "centered-btns",
   });
 
-  $("#slider2").responsiveSlides({
+  $("#slider-photos").responsiveSlides({
+    auto: false,
+    pager: true,
+    nav: true,
+    speed: 500,
+    maxwidth: 800,
+    namespace: "centered-btns",
+  });
+
+  $("#slider-taiwan").responsiveSlides({
     auto: false,
     pager: true,
     nav: true,
