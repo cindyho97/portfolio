@@ -25,6 +25,24 @@ function initializeSlides() {
     maxwidth: 800,
     namespace: "centered-btns",
   });
+
+  $("#slider-investeren").responsiveSlides({
+    auto: false,
+    pager: true,
+    nav: true,
+    speed: 500,
+    maxwidth: 800,
+    namespace: "centered-btns",
+  });
+
+  $("#slider-afstamming").responsiveSlides({
+    auto: false,
+    pager: true,
+    nav: true,
+    speed: 500,
+    maxwidth: 800,
+    namespace: "centered-btns",
+  });
 }
 
 function reloadSlides() {
