@@ -43,6 +43,15 @@ function initializeSlides() {
     maxwidth: 800,
     namespace: "centered-btns",
   });
+
+  $("#slider-record").responsiveSlides({
+    auto: false,
+    pager: true,
+    nav: true,
+    speed: 500,
+    maxwidth: 800,
+    namespace: "centered-btns",
+  });
 }
 
 function reloadSlides() {

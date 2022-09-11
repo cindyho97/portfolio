@@ -573,50 +573,70 @@
                 </div>
               </div>
 
-              <!--Tone Pitch Video-->
+              <!--Record Player-->
               <div
-                class="col col-m-12 col-t-4 col-d-4 box-item f-design f-video"
+                class="col col-m-12 col-t-5 col-d-4 box-item f-design f-website"
               >
                 <div class="item animated">
                   <div class="desc">
                     <div class="image">
-                      <a href="#popup-tone" class="has-popup"
+                      <a href="#popup-record" class="has-popup"
                         ><img
-                          src="images/works/tone.jpg"
-                          alt="screenshot of a speech bubble in tone video"
+                          src="images/works/record-player-main.png"
+                          alt="front page of the mockup"
                       /></a>
                     </div>
-                    <div class="category">Motion Graphics</div>
+                    <div class="category">Web App, UX/UI Design</div>
                     <div class="name">
-                      <a href="#popup-tone" class="has-popup"
-                        >Tone - Pitch Video</a
+                      <a href="#popup-record" class="has-popup"
+                        >Record Player</a
                       >
                     </div>
                   </div>
                 </div>
-                <div id="popup-tone" class="popup-box mfp-fade mfp-hide">
+                <div id="popup-record" class="popup-box mfp-fade mfp-hide">
                   <div class="content">
-                    <div class="video-container image">
-                      <iframe
-                        src="https://www.youtube.com/embed/RYUtJMXjxCU"
-                        frameborder="0"
-                        allow="autoplay; encrypted-media"
-                        allowfullscreen
-                      ></iframe>
+                    <div class="rslides_container image">
+                      <ul class="rslides" id="slider-record">
+                        <li>
+                          <img
+                            src="images/works/record-player-1.png"
+                            alt="screenshot of homepage leren investeren website"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="images/works/record-player-2.png"
+                            alt="screenshot of blog posts with a certain category"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="images/works/record-player-3.png"
+                            alt="screenshot of blog post page"
+                          />
+                        </li>
+                      </ul>
                     </div>
+
+                    <!-- End Carousel -->
                     <div class="desc">
-                      <div class="category">Motion Graphics</div>
-                      <h4>Tone - Pitch Video</h4>
+                      <div class="category">Web App, UX/UI Design</div>
+                      <h4>Record Player</h4>
                       <p>
-                        A pitch video for our voice based dating app as a part
-                        of the Creative Technologies and Entrepeneurship
-                        programme. This video is made in After Effects.
+                        A record player app made with ReactJS. You can toggle
+                        between the record player animation and the music video
+                        of the song. I've used the react-player library for
+                        controlling YouTube videos and Framer Motion library for
+                        the animations.
                       </p>
                       <a
-                        href="https://youtu.be/RYUtJMXjxCU"
+                        href="https://record-player-peach.vercel.app/"
                         target="_blank"
                         class="btn-overlay"
-                        ><img src="images/icons/youtube.png" alt="youtube logo"
+                        ><img
+                          src="images/icons/link.png"
+                          alt="website link logo"
                       /></a>
                     </div>
                   </div>
@@ -1055,6 +1075,15 @@
       });
 
       $("#slider-afstamming").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "centered-btns",
+      });
+
+      $("#slider-record").responsiveSlides({
         auto: false,
         pager: true,
         nav: true,
