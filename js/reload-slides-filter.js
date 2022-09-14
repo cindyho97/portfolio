@@ -35,7 +35,7 @@ function initializeSlides() {
     namespace: "centered-btns",
   });
 
-  $("#slider-afstamming").responsiveSlides({
+  $("#slider-driving").responsiveSlides({
     auto: false,
     pager: true,
     nav: true,
